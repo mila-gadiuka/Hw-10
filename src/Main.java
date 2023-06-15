@@ -18,14 +18,47 @@ public class Main {
     }
 
     public static void task1() {
+        System.out.print("Введите имя: ");
+        String firstName = scanner.nextLine();
 
+        System.out.print("Введите отчество: ");
+        String middleName = scanner.nextLine();
+
+        System.out.print("Введите фамилию: ");
+        String lastName = scanner.nextLine();
+
+        String fullName = lastName + " " + firstName + " " + middleName;
+        System.out.println("ФИО сотрудника - " + fullName);
     }
 
     public static void task2() {
+        System.out.print("Введите имя: ");
+        String firstName = scanner.nextLine();
 
+        System.out.print("Введите отчество: ");
+        String middleName = scanner.nextLine();
+
+        System.out.print("Введите фамилию: ");
+        String lastName = scanner.nextLine();
+
+        String fullName = lastName + " " + firstName + " " + middleName;
+        String capitalizedFullName = fullName.toUpperCase();
+
+        System.out.println("Данные ФИО сотрудника для заполнения отчета — " + capitalizedFullName);
     }
 
     public static void task3() {
+        System.out.print("Введите имя: ");
+        String firstName = scanner.nextLine();
 
+        System.out.print("Введите отчество: ");
+        String middleName = scanner.nextLine();
+
+        System.out.print("Введите фамилию: ");
+        String lastName = scanner.nextLine();
+
+        String fullName = lastName + " " + firstName + " " + middleName;
+        String filterOfTheUnacceptedCharacter = fullName.replace("ё", "е").replace("Ё", "Е");
+        System.out.println("Данные ФИО сотрудника — " + filterOfTheUnacceptedCharacter);
     }
 }
